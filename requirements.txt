@@ -1,0 +1,6 @@
+
+python-vlc
+PyQt5
+yt-dlp
+youtube-search-python
+PyYAML
