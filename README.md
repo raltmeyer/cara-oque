@@ -17,3 +17,7 @@ setup_venv.sh
 ## How to use
 
 Copy your karaoque music videos (.mp4) to musicas folder and run the oque.py python script.
+
+## How to manage the download channels
+
+The program is checking specific youtube channels for the videos, add new channels to channels.yaml as needed.
