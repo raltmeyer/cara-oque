@@ -1,6 +1,7 @@
 # cara-oque
 Very simple karaoque manager to play mp4 videos
 
+The interface and messages are currently in Brazilian Portuguese. Contributions and translations into other languages are welcome.
 
 # How to install
 
