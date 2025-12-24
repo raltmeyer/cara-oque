@@ -1,9 +1,9 @@
 # cara-oque
-Very simple karaoque manager to play mp4 videos
+Very simple karaoque manager to download and play mp4 videos
 
 The interface and messages are currently in Brazilian Portuguese. Contributions and translations into other languages are welcome.
 
-# How to install
+## How to install
 
 You need to have the VLC installed in your machine
 
@@ -14,7 +14,6 @@ setup_venv.ps1
 setup_venv.sh
 ```
 
-# How to use
+## How to use
 
 Copy your karaoque music videos (.mp4) to musicas folder and run the oque.py python script.
-

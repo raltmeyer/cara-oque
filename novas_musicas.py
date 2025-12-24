@@ -6,6 +6,8 @@ import yaml
 from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QLineEdit, QPushButton, QListWidget, QMessageBox, QLabel, QDialog, QProgressBar
 from PyQt5.QtCore import Qt, QThread, pyqtSignal
 
+#####
+# Classe que cuida do download
 class DownloadWorker(QThread):
 	progress_signal = pyqtSignal(float)
 	finished_signal = pyqtSignal(str)
@@ -34,6 +36,8 @@ class DownloadWorker(QThread):
 				p = (downloaded / total) * 100
 				self.progress_signal.emit(p)
 
+#####
+# Classe que monta a tela com o status do download
 class DownloadDialog(QDialog):
 	def __init__(self, title, parent=None):
 		super().__init__(parent)
@@ -69,6 +73,8 @@ class DownloadDialog(QDialog):
 		self.label.setText(f"Erro: {msg}")
 		self.btn_close.show()
 
+#####
+# Tela de pesquisa de musicas
 class MusicaSearchApp(QWidget):
 	def download_video(self, title, video_id):
 		import os
@@ -176,7 +182,7 @@ class MusicaSearchApp(QWidget):
 		if not found:
 			self.results_list.addItem("Nenhum vídeo encontrado.")
 
-
+#####
 # Suporte para iniciar a partir de outro script (oque.py)
 def run_musica_search_app(on_close_callback=None):
 	app = QApplication.instance()
