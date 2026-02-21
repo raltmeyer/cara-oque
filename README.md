@@ -5,15 +5,41 @@ The interface and messages are currently in Brazilian Portuguese. Contributions 
 
 ## How to install
 
-You need to have the VLC installed in your machine
+You need to have the VLC and python 3.10+ installed in your machine, Im using brew on MacOS to install them:
+
+```
+brew install vlc
+brew install python@3.13
+``` 
+
+For Windows, you can use `winget` to install Python 3.13 and VLC:
+
+```powershell
+winget install Python.Python.3.13
+winget install VideoLAN.VLC
+```
+
 
 Create the python virtual environment executing the following scripts depending on your OS:
 
+MacOS:
 ```
-setup_venv.ps1
-setup_venv.sh
+source setup_venv.sh
 ```
 
+Windows:
+```
+.\setup_venv.ps1
+```
+
+## Run the app
+
+```
+source setup_venv.sh
+python oque.py
+```
+
+    
 ## How to use
 
 Copy your karaoque music videos (.mp4) to musicas folder and run the oque.py python script.
